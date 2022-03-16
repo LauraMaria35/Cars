@@ -1,0 +1,539 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#hemel {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    position: fixed;
+    background-color: lightblue;
+    animation: dag-nacht 20s linear infinite;
+}
+
+@keyframes dag-nacht {
+    0% {
+        background-color: lightblue;
+    }
+    30% {
+        background-color: lightblue;
+    }
+    40% {
+        background-color: darkblue;
+    }
+    50% {
+        background-color: black;
+    }
+    80% {
+        background-color: black;
+    }
+    90% {
+        background-color: blue;
+    }
+    100% {
+        background-color: lightblue;
+    }
+}
+
+#zon {
+    width: 1000px;
+    height: 999px;
+    left: 120px;
+    background-position: bottom;
+    position: fixed;
+    background-image: url(../img/zon.jpeg);
+    background-repeat: no-repeat;
+    animation: sunset 20s linear infinite;
+
+}
+
+@keyframes sunset {
+    0% {
+        background-image: url(../img/zon.jpeg);
+        top: -100px;
+    }
+    20% {
+        background-image: url(../img/zon.jpeg);
+        top: -100px;
+    }
+    45% {
+        background-image: url(../img/zon.jpeg);
+        top: 550px;
+    }
+    80% {
+        background-image: url(../img/zon.jpeg);
+        top: 550px;
+    }
+    100% {
+        background-image: url(../img/zon.jpeg);
+        top: -100px;
+    }
+}
+
+#maan {
+    width: 100%;
+    height: 100%;
+    background-position: top;
+    position: fixed;
+    background-image: url(../img/luna.jpeg);
+    background-repeat: no-repeat;
+    animation: maan-verschijnt 20s linear infinite;
+}
+
+@keyframes maan-verschijnt {
+
+    0% {
+        background-image: url(../img/luna.jpeg);
+        top: -600px;
+    }
+    20% {
+        background-image: url(../img/luna.jpeg);
+        top: -600px;
+    }
+    45% {
+        background-image: url(../img/luna.jpeg);
+        top: 50px;
+    }
+    80% {
+        background-image: url(../img/luna.jpeg);
+        top: 50px;
+    }
+    100% {
+        background-image: url(../img/luna.jpeg);
+        top: -600px;
+    }
+}
+
+#stad {
+    width: 100%;
+    position: fixed;
+    background-image: url(../img/stad.png);
+    height: 100%;
+    background-repeat: repeat-x;
+    background-position: bottom;
+    animation: nightlights 20s linear infinite;
+}
+
+@keyframes nightlights {
+    0% {
+        background-image: url(../img/stad.png);
+    }
+    30% {
+        background-image: url(../img/stad.png);
+    }
+    50% {
+        background-image: url(../img/stadnacht__17895__0.png);
+    }
+    70% {
+        background-image: url(../img/stadnacht__17895__0.png);
+    }
+    80% {
+        background-image: url(../img/stad.png);
+    }
+    100% {
+        background-image: url(../img/stad.png);
+    }
+}
+
+#boxhond{
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    bottom: 100px;
+    right: -100px;
+    animation: moveboxhond 8s linear infinite;
+}
+@keyframes  moveboxhond{
+    0% {
+        right: -100px;
+    }
+    100% {
+        right: 100%;
+    }
+}
+
+#hond {
+    width: 81px;
+    height: 55px;
+    position: absolute;
+    animation: movehond 2s ease-in-out infinite;
+    background-image: url(../img/hond.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+@keyframes movehond {
+    0% {
+        top: 60px;
+    }
+    35% {
+        top: 100%;
+    }65%{
+        top:100%;
+    }
+    100% {
+        top: 60px;
+    }
+}
+
+#schaduwtrottoir {
+    width: 131px;
+    height: 12px;
+    top: 145%;
+    left: -15px;
+    position: absolute;
+    animation: moveschaduwhond 2s ease-in infinite;
+    background-image: url(../img/schaduw.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+@keyframes  moveschaduwhond{
+    0% {
+        transform: scaleX(0.1);
+    }
+    35% {
+        transform: scaleX(0.5);
+    }65%{
+        transform: scaleX(0.5);
+    }
+    100% {
+        transform: scaleX(0.1);
+    }
+}
+
+#boxvlinder {
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    top: 70px;
+    animation: move 5s linear infinite;
+}
+
+@keyframes move {
+    0% {
+        left: -100px;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+#vlinder {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    animation: movevlinder 2s ease-in-out infinite;
+    background-image: url(../img/butterfly-animated-gif-21.gif);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+@keyframes movevlinder {
+    0% {
+        top: 40px;
+    }
+    50% {
+        top: 100%;
+    }
+    100% {
+        top: 40px;
+    }
+}
+
+#auto {
+    width: 263px;
+    height: 160px;
+    background-image: url(../img/koetswerk.png);
+    position: fixed;
+    bottom: 0;
+    left: -256px;
+    animation: moveauto 10s linear infinite;
+}
+
+@keyframes moveauto {
+    0% {
+        left: -256px;
+        transform: scaleX(1);
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+    6% {
+        left: 8px;
+        transform: scaleX(1);
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+    11% {
+        left: 5%;
+        transform: scaleX(1);
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+    15% {
+        left: 10%;
+        transform: scaleX(1);
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+    20% {
+        left: 20%;
+        transform: scaleX(1);
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+    25% {
+        left: 30%;
+        transform: scaleX(1);
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    30% {
+        left: 40%;
+        transform: scaleX(1);
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+    34% {
+        left: 50%;
+        transform: scaleX(1);
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+    37% {
+        left: 60%;
+        transform: scaleX(1);
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+    40% {
+        left: 70%;
+        transform: scaleX(1);
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+    43% {
+        left: 80%;
+        transform: scaleX(1);
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+    49% {
+        left: 100%;
+        transform: scaleX(1);
+    }
+    51% {
+        left: 100%;
+        transform: scaleX(-1);
+        bottom: 0;
+    }
+    58% {
+        left: 80%;
+        transform: scaleX(-1);
+        bottom: 5px;
+    }
+    100% {
+        left: -256px;
+        transform: scaleX(-1);
+        bottom: 0;
+    }
+}
+
+#wielL {
+    background-image: url(../img/wiel.png);
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    bottom: 0;
+    left: 25px;
+    animation: rotate 1s infinite linear;
+}
+
+#wielR {
+    background-image: url(../img/wiel.png);
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    bottom: 0;
+    left: 178px;
+    animation: rotate 1s infinite linear;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#auto2 {
+    background-image: url(../img/koetswerk2.png);
+    width: 267px;
+    height: 141px;
+    position: fixed;
+    bottom: 0;
+    right: -256px;
+    animation: moveauto2 10s linear infinite;
+    transition-delay: 3s;
+    background-repeat: no-repeat;
+}
+
+@keyframes moveauto2 {
+    0% {
+        right: -256px;
+        transform: scaleX(-1);
+        bottom: 0;
+        
+    }
+    49% {
+        right: 100%;
+        transform: scaleX(-1);
+        bottom: 5px;
+        
+    }
+    51% {
+        right: 100%;
+        transform: scaleX(1);
+        bottom: 0;
+    }
+    100% {
+        right: -256px;
+        transform: scaleX(1);
+        bottom: 5px;
+    }
+}
+
+#wielL2 {
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    background-image: url(../img/wiel2.png);
+    bottom: 0;
+    right: 25px;
+    animation: rotate2 1s infinite linear;
+}
+
+#wielR2 {
+    background-image: url(../img/wiel2.png);
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    bottom: 0;
+    right: 195px;
+    animation: rotate2 1s infinite linear;
+}
+
+@keyframes rotate2 {
+    0% {
+        transform: rotate(0deg);
+        bottom: 0;
+    }
+    100% {
+        transform: rotate(360deg);
+        bottom: 1px;
+    }
+}
+
+#schaduw {
+    width: 256px;
+    height: 176px;
+    background-image: url(../img/schaduw2.png);
+    position: fixed;
+    bottom: 0;
+    left: -256px;
+    animation: moveschaduw 10s linear infinite;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+@keyframes moveschaduw {
+    0% {
+        left: -256px;
+        transform: scaleX(1);
+    }
+    8% {
+        left: 0px;
+        transform: scaleX(1);
+    }
+    11% {
+        left: 5%;
+        transform: scaleX(1);
+    }
+    15% {
+        left: 10%;
+        transform: scaleX(1);
+    }
+    20% {
+        left: 20%;
+        transform: scaleX(1);
+    }
+    25% {
+        left: 30%;
+        transform: scaleX(1);
+    }
+    30% {
+        left: 40%;
+        transform: scaleX(1);
+    }
+    34% {
+        left: 50%;
+        transform: scaleX(1);
+    }
+    37% {
+        left: 60%;
+        transform: scaleX(1);
+    }
+    40% {
+        left: 70%;
+        transform: scaleX(1);
+    }
+    43% {
+        left: 80%;
+        transform: scaleX(1);
+    }
+    49% {
+        left: 100%;
+        transform: scaleX(1);
+    }
+    51% {
+        left: 100%;
+        transform: scaleX(-1);
+    }
+    51% {
+        left: 100%;
+        transform: scaleX(-1);
+    }
+    58% {
+        left: 80%;
+        transform: scaleX(-1);
+    }
+    100% {
+        left: -256px;
+        transform: scaleX(-1);
+    }
+}
+
+#schaduw2 {
+    background-image: url(../img/schaduw2.png);
+    width: 267px;
+    height: 141px;
+    position: fixed;
+    bottom: 0;
+    right: -256px;
+    animation: moveschaduw2 10s linear infinite;
+    transition-delay: 3s;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+
+@keyframes moveschaduw2 {
+    0% {
+        right: -256px;
+        transform: scaleX(-1);
+    }
+    49% {
+        right: 100%;
+        transform: scaleX(-1);
+    }
+    51% {
+        right: 100%;
+        transform: scaleX(1);
+    }
+    100% {
+        right: -256px;
+        transform: scaleX(1);
+    }
+}
